@@ -2,7 +2,8 @@
 title: "RMarkDown Basics"
 author: "Adrian Edo"
 date: "2/21/2020"
-output: html_document
+output: 
+  bookdown::gitbook: default
 ---
 
 ```{r setup, include=FALSE}
@@ -50,6 +51,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 #ctrl + alt + i to get this below
 ```{r, map, cache=TRUE, out.width='100%'}
 library(leaflet)
-leaflet() %>% addTiles() %>% setView(-34.8526, 82.3940, zoom = 19)
+leaflet() %>% addTiles() %>% setView(-1.9317, 41.3849, zoom = 19)
 ```
 
